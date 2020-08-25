@@ -1,0 +1,20 @@
+
+.rightcol {
+  position: relative;
+  display: flex;
+  width: 40px;
+  float: right;
+  justify-content: center;
+  color: #fff;
+  background: #343a40;
+  border-radius: 23px;
+    }
+
+
+/* Table
+**************************/
+
+.table_name{
+  width: 40%;}
+.table_price{width: 25%;}
+.table_actions{width: 35%;}
