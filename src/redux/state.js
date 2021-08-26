@@ -214,40 +214,43 @@ else if (action.type==='UPDATE-NEW-COUNT2-add') {
 }}
  if(ac.type==='sort-pricemax'){
 
-
-this._state.profilePage.posts.sort((a, b) => a.price.replace(/[^0-9.]/g,'') < b.price.replace(/[^0-9.]/g,'') ? 1 : -1);
+this._state.profilePage.posts.sort((a, b) => { 
+  return a.price.replace(/[^0-9.]/g,'') -b.price.replace(/[^0-9.]/g,'')});
     this._callSubscriber(this._state);
 
  }
  if(ac.type==='sort-pricemin'){
 
 
-this._state.profilePage.posts.sort((a, b) => a.price.replace(/[^0-9.]/g,'') > b.price.replace(/[^0-9.]/g,'') ? 1 : -1);
+this._state.profilePage.posts.sort((a, b) => { 
+  return b.price.replace(/[^0-9.]/g,'') -a.price.replace(/[^0-9.]/g,'')});
     this._callSubscriber(this._state);
 
  }
  if(ac.type==='sort-pricemax-shop'){
 
 
-this._state.profilePage.goods.sort((a, b) => a.price.replace(/[^0-9.]/g,'') < b.price.replace(/[^0-9.]/g,'') ? 1 : -1);
+this._state.profilePage.goods.sort((a, b) =>{ 
+  return a.price.replace(/[^0-9.]/g,'') -b.price.replace(/[^0-9.]/g,'')});
     this._callSubscriber(this._state);
 
  }
  if(ac.type==='sort-pricemin-shop'){
 
 
-this._state.profilePage.goods.sort((a, b) => a.price.replace(/[^0-9.]/g,'') > b.price.replace(/[^0-9.]/g,'') ? 1 : -1);
+this._state.profilePage.goods.sort((a, b) => { 
+  return b.price.replace(/[^0-9.]/g,'') -a.price.replace(/[^0-9.]/g,'')});
     this._callSubscriber(this._state);
 
  }
  if(ac.type==='sort-pricemax-operations-price'){
-    this._state.profilePage.operations.sort((a, b) => a.price.replace(/[^0-9.]/g,'') < b.price.replace(/[^0-9.]/g,'') ? 1 : -1);
+    this._state.profilePage.operations.sort((a, b) =>{ 
+      return a.price.replace(/[^0-9.]/g,'') -b.price.replace(/[^0-9.]/g,'')});
     this._callSubscriber(this._state);
  }
  if(ac.type==='sort-pricemin-operations-price'){
-
-
-this._state.profilePage.operations.sort((a, b) => a.price.replace(/[^0-9.]/g,'') > b.price.replace(/[^0-9.]/g,'') ? 1 : -1);
+this._state.profilePage.operations.sort((a, b) =>{ 
+  return b.price.replace(/[^0-9.]/g,'') -a.price.replace(/[^0-9.]/g,'')});
     this._callSubscriber(this._state);
 
  }

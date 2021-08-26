@@ -2,6 +2,7 @@
 .navb{
   grid-area: n;
   background-color: grey;
+  height: auto;
 }
 .item a {
   color:white;
