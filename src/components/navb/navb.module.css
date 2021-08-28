@@ -2,7 +2,10 @@
 .navb{
   grid-area: n;
   background-color: grey;
-  height: auto;
+  border-color: 'transparent';
+  border-width: 1;
+  border-style: solid;
+  height: 85px;
 }
 .item a {
   color:white;

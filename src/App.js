@@ -7,6 +7,7 @@ import Navb from './components/navb/navb.jsx';
 import Profile from './components/profile/profile.jsx';
 import Operations from './components/operations/operations.jsx';
 import Angime from './components/angime/angime.jsx';
+//import Footer from './components/footer/footer.jsx';
 function App(props) {
   return (
     <BrowserRouter>

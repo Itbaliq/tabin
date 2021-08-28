@@ -1,6 +1,9 @@
 
 .bas{
   background-color: black;
+  border-color: 'transparent';
+  border-width: 1;
+  border-style: solid;
   grid-area: b;
 
 }
